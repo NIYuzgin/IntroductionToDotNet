@@ -39,14 +39,12 @@ namespace Game
 					case ConsoleKey.D:x++;break;
 				}
 				
-
 				if(x==0||y==0||x==Console.WindowWidth||y==Console.WindowHeight)Console.Beep();
 				if(x == 0) x = 1;
 				if(x==Console.WindowWidth) x = Console.WindowWidth-1;
 				if (y == 0) y = 1;
 				if(y==Console.WindowHeight) y = Console.WindowHeight-1;
 			} while (key != ConsoleKey.Escape);
-
 			
 		}
 	}

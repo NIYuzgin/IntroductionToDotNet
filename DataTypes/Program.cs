@@ -1,6 +1,6 @@
-﻿//#define DATATYPES
+﻿#define DATATYPES
 //#define CONSTANTS
-#define TYPE_CONVERSIONS
+//#define TYPE_CONVERSIONS
 
 
 
@@ -68,16 +68,72 @@ $@"sbyte занимает {sizeof(sbyte)} байт памяти,
 				);
 			Console.WriteLine(delimiter);
 
+			Console.WriteLine(
+$@"short занимает {sizeof(short)} байт памяти,
+и принимает значения в диапазоне от {short.MinValue} до {short.MaxValue},
+класс обвертка {typeof(short)}"
+				);
+			Console.WriteLine(delimiter);
+
 			Console.WriteLine
 				(
-				$@"float занимает {sizeof(float)} байт памяти"
+$@"ushort занимает {sizeof(ushort)} байт памяти,
+и принимает значения в диапазоне от {ushort.MinValue} до {ushort.MaxValue},
+класс обвертка {typeof(ushort)}"
 				);
-			Console.WriteLine(delimiter); 
+			Console.WriteLine(delimiter);
+
+			Console.WriteLine(
+$@"int занимает {sizeof(int)} байт памяти,
+и принимает значения в диапазоне от {int.MinValue} до {int.MaxValue},
+класс обвертка {typeof(int)}"
+				);
+			Console.WriteLine(delimiter);
+
+			Console.WriteLine
+				(
+$@"uint занимает {sizeof(uint)} байт памяти,
+и принимает значения в диапазоне от {uint.MinValue} до {uint.MaxValue},
+класс обвертка {typeof(uint)}"
+				);
+			Console.WriteLine(delimiter);
 			
+			Console.WriteLine(
+$@"long занимает {sizeof(long)} байт памяти,
+и принимает значения в диапазоне от {long.MinValue} до {long.MaxValue},
+класс обвертка {typeof(long)}"
+				);
+			Console.WriteLine(delimiter);
+
 			Console.WriteLine
 				(
-				$@"decimal занимает {sizeof(decimal)} байт памяти"
+$@"ulong занимает {sizeof(ulong)} байт памяти,
+и принимает значения в диапазоне от {ulong.MinValue} до {ulong.MaxValue},
+класс обвертка {typeof(ulong)}"
 				);
+			Console.WriteLine(delimiter);
+			
+			Console.WriteLine(
+$@"float занимает {sizeof(float)} байт памяти,
+и принимает значения в диапазоне от {float.MinValue} до {float.MaxValue},
+класс обвертка {typeof(float)}"
+				);
+			Console.WriteLine(delimiter);
+			
+			Console.WriteLine(
+$@"double занимает {sizeof(double)} байт памяти,
+и принимает значения в диапазоне от {double.MinValue} до {double.MaxValue},
+класс обвертка {typeof(double)}"
+				);
+			Console.WriteLine(delimiter);
+			
+			Console.WriteLine(
+$@"decimal занимает {sizeof(decimal)} байт памяти,
+и принимает значения в диапазоне от {decimal.MinValue} до {decimal.MaxValue},
+класс обвертка {typeof(decimal)}"
+				);
+			Console.WriteLine(delimiter);
+
 			decimal a = 1;
 			//double a = 1;
 			a /= 3;
