@@ -1,4 +1,5 @@
-﻿//#define CALC_IF
+﻿//#define CALC
+//#define CALC_IF
 //#define CALC_SWITCH
 
 using System;
@@ -13,10 +14,11 @@ namespace Calc
 	{
 		static void Main(string[] args)
 		{
-			/*
+			
 
 
-			Console.Write("Введите арифметическое выражение вида '2 + 3': ");
+#if CALC
+		Console.Write("Введите арифметическое выражение вида '2 + 3': ");
 			string expression = Console.ReadLine();
 			expression = expression.Replace('.', ',');
 
@@ -37,8 +39,9 @@ namespace Calc
 				case '/': Console.WriteLine($"{numbers[0]} / {numbers[1]} = {a / b}"); break;
 
 				default: Console.WriteLine("Error: No operation"); break;
-			}
-			*/
+			} 
+#endif
+			
 
 
 			Console.Write("Введите арифметическое выражение: ");
