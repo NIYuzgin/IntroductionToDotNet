@@ -48,7 +48,7 @@ namespace Calc
 #endif
 			Console.Write("Введите арифметическое выражение: ");
 			//string expression = "22+33-44/2+8*3";
-			expression = "22+33-44/2+8*3";
+			expression = "5+(1+(2+(22+3)*2+(33-44)/(2+8)*3+1)*2-2";
 			//expression = Console.ReadLine();
 			expression = expression.Replace('.', ',');
 			expression = expression.Replace(" ", "");
