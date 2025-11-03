@@ -74,12 +74,10 @@ namespace Calc
 			}
 			Console.WriteLine();
 			*/
-
 			/*
 			operations = expression.Split(digits);
 			operations = operations.Where(o => o != "").ToArray();  // LINQ
 			*/
-
 			/*
 			for (int i = 0; i < operations.Length; i++)
 			{
@@ -145,9 +143,7 @@ namespace Calc
 			}
 
 #endif
-
 		}
-
 		static string Explorer(string expression)
 		{
 			for(int i = 0; i < expression.Length; i++)
@@ -258,6 +254,5 @@ namespace Calc
 				operations[operations.Length-1] = "";
 				values[values.Length-1] = 0;
 			}
-
 	}
 }
